@@ -37,6 +37,12 @@ export default function Navbar({ user, isAdmin }: NavbarProps) {
           >
             Events
           </Link>
+          <Link
+            href="/contact"
+            className="text-gray-600 hover:text-brand-600 font-medium transition-colors"
+          >
+            Contact
+          </Link>
           {user && (
             <>
               <Link
@@ -115,6 +121,9 @@ export default function Navbar({ user, isAdmin }: NavbarProps) {
         <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
           <Link href="/events" className="block text-gray-700 font-medium py-1">
             Events
+          </Link>
+          <Link href="/contact" className="block text-gray-700 font-medium py-1">
+            Contact
           </Link>
           {user && (
             <>
